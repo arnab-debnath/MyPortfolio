@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <link rel="stylesheet" href="styles.css">
+    <title>My Projects</title>
+</head>
+<body class="bg-gray-950 text-[#fafafa] mx-auto min-h-screen">
+
+  <header>
+        <!-- Navbar -->
+        <nav class="bg-white/10 backdrop-blur-lg md:rounded-full md:mx-auto sm:mt-2 md:mt-6 h-16 max-w-5xl px-6 flex items-center justify-between z-50 relative">
+  <!-- Mobile Menu Icon (visible only on small screens) -->
+  <button id="menu-btn" class="block md:hidden text-cyan-300 text-2xl focus:outline-none">
+    <i data-lucide="arrow-down-right"></i>
+  </button>
+  
+  <!-- Logo -->
+  <div class="flex-1 flex justify-center md:justify-start">
+    <!-- On small screen - absolute center. On md+ starts left -->
+    <a href="index.html" class="animate-text font-bold text-lg mx-auto md:mx-0">A R N A B .</a>
+  </div>
+  
+  <!-- Menu links (hidden on small screens) -->
+  <div class="hidden md:flex space-x-8">
+    <a href="index.html" class=" hover:scale-105">Home</a>
+    <a href="projects.html" class=" hover:scale-105">Projects</a>
+    <a href="contact.html" class=" hover:scale-105">Contact</a>
+  </div>
+  
+</nav>
+
+<!-- Sidebar Menu (mobile only) -->
+<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-900/80 backdrop-blur-lg shadow-lg z-50 transform -translate-x-full transition-transform duration-300 md:hidden">
+  <button id="close-btn" class="text-cyan-300 text-3xl p-4 absolute top-2 right-4 focus:outline-none">
+    <i data-lucide="arrow-down-left"></i>
+  </button>
+  <nav class="mt-16 flex flex-col items-center gap-6">
+    <a href="index.html" class="text-gray-300 hover:text-indigo-500">Home</a>
+    <a href="projects.html" class="text-gray-300 hover:text-indigo-500">Projects</a>
+    <a href="contact.html" class="text-gray-300 hover:text-indigo-500">Contact</a>
+  </nav>
+</div>
+</header>
+
+
+  <section class="py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-white mb-3">Demo Projects by Industry</h2>
+      <p class="text-gray-300">
+        Explore a curated set of demo projects reflecting real-world solutions across leading industries. Each project demonstrates my expertise in design, development, and delivering user-focused features with modern web technologies.
+      </p>
+    </div>
+
+    <!-- Card Grid -->
+    <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"></div>
+    <!-- Pagination -->
+    <nav id="pagination" class="flex justify-center items-center space-x-2 mt-8"></nav>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm">&copy; 2025 ARNAB.DEV All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="./index.js"></script>
+</body>
+</html>
